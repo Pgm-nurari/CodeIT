@@ -1,0 +1,8 @@
+Classes and Objects
+
+Classes are used to create user-defined data types.
+Classes also act as a blueprint, that can be reused multiple times to create similar objects.
+
+Question:
+    Create an employee class with the instance variable emno, empname, and des, store 3 employee 
+    details and display the same.
