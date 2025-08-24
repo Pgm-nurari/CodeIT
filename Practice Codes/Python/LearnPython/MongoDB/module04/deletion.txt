@@ -1,0 +1,35 @@
+|-----------------------------------|
+
+MongoDB: Deleting Non-Existent Collections
+
+MongoDB does not raise an error when dropping a non-existent collection.
+
+Example:
+
+db.drop_collection('nonexistent')  # returns {'ok': 1.0}
+
+This behavior is intentional and reflects MongoDB's idempotent design.
+
+No need to wrap in try/except, but you can check manually:
+
+if 'collection_name' in db.list_collection_names():
+    db.drop_collection('collection_name')
+
+Only invalid collection operations (like illegal names) raise errors.
+
+Summary:
+Dropping a non-existent collection is allowed and returns success.
+
+|-----------------------------------|
+
+Deleting Non-Existent Documents
+
+    Still no error raised
+    The delete_one() or delete_many() methods just return a result with:
+        deleted_count = 0
+        
+        result = collection.delete_one({"name": "Ghost"})
+        print(result.deleted_count)  # Outputs 0 if document didn't exist
+    
+    MongoDB is tolerant and does not throw an exception when you try to delete something that doesn’t exist — whether it’s a document or a collection. 
+    Instead, it returns a result you can check (deleted_count for documents, no return for collections).

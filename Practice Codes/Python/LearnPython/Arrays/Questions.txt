@@ -1,0 +1,23 @@
+Assignment questions:
+
+1.  Create an array with 5 values and delete 
+    the values at index 2 without using in-built functions?
+2.  Write a code to reverse an array without using 
+    in-built functions?
+    
+Assignment Answers:
+
+1.  Code: 
+
+    arr=array('i',[1,2,3,4,5])
+    new_arr=array(arr.typecode,[val for val in arr if (val!=arr[2])])
+    print(arr,new_arr,end="\n")
+
+2. Code:
+
+    arr = array('i',[1,2,3,4,5])
+    new_arry = array('i',[])
+    for i in range(len(arr)):
+        new_arry =new_arry + array('i',[arr[-i-1]])
+    print("arr: ",arr)
+    print("new_array: ",new_arry)    

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Sabhyam"> 
+        <meta name="description" content="This is a practice site for implementing Forms using html,css and javascript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="60">
+
+        <title>Test Forms using HTML </title>
+        <link rel="icon" type="image/x-icon" href="Resources/images/formslogo.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <center>
+            <form action="">
+                <div id="form_head">
+                    <h1>Test Form</h1>
+                    <hr>
+                    <p>This form is built using the languages: HTML,CSS and JS</p>
+                </div>
+                <div id="form_body">
+                    <fieldset style="width:50%;">
+                        <legend>Personalia:</legend>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                        <input type="submit" value="Submit">
+                      </fieldset>
+                </div>
+            </form>
+            <br><br>
+            <form>
+                <div id="form_head">
+                    <h1>Test Form</h1>
+                    <hr>
+                    <p>This form is built using the languages: HTML,CSS and JS</p>
+                </div>
+                <div id="form_body">
+                    <table border="0">
+                        <tr>
+                            <th><P>Name</P></th>
+                            <td><input type="text" name="fullname" placeholder="Enter full name" required></td>
+                        </tr>
+                        <tr>
+                            <th><p>Phone Number</p></th>
+                            <td><input type="tel" name="phone" placeholder="+91" required></td>
+                        </tr>
+                        <tr>
+                            <th><p>Email</p></th>
+                            <td><input type="email" name="email" placeholder="abcdefg@gmail.com" required></td>
+                        </tr>
+                        <tr>
+                            <th><label for="gender">Gender</label></th>
+                            <td>
+                                <input type="radio" name="gender" id="mg" value="Male" > 
+                                <label for="mg">Male</label>
+                                <input type="radio" name="gender" id="fg" value="Female"> 
+                                <label for="fg">Female</label> 
+                                <input type="radio" name="gender" id="wbg" value="Wallmart Bag"> 
+                                <label for="wbg">Wallmart Bag</label>
+                                <input type="radio" name="gender" id="hg" value="Helicopter"> 
+                                <label for="hg">Helicopter</label>
+                                <input type="radio" name="gender" id="ig" value="Invalid" checked> 
+                                <label for="ig">Nigga</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="hobby">Hobby</label></th>
+                            <td>
+                                <input type="checkbox" id="h1" name="hobby" value="Sleeping">
+                                <label for="h1"> I love Sleeping</label><br>
+                                <input type="checkbox" id="h2" name="hobby" value="Reading">
+                                <label for="h2"> I love reading</label><br>
+                                <input type="checkbox" id="h3" name="hobby" value="Gaming">
+                                <label for="h3"> I love gaming</label><br>
+                                <input type="checkbox" id="h4" name="hobby" value="Excercise">
+                                <label for="h4"> I love excercising</label><br>
+                                <input type="checkbox" id="h5" name="hobby" value="Null">
+                                <label for="h5"> I have no hobby</label><br>    
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Country</th>
+                            <td><input type="text" value="India" required></td>
+                        </tr>
+                        <tr>
+                            <th>State</th>
+                            <td><select name="State" id="state" required>
+                                <option value="None" selected>None</option>
+                                <option value="Kerala">Keralam</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Select your browser</th>
+                            <td>
+                                <input list="browsers">
+                                <datalist id="browsers">
+                                    <option value="Edge">
+                                    <option value="Firefox">
+                                    <option value="Chrome">
+                                    <option value="Opera">
+                                    <option value="Safari">
+                                </datalist>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="2"> 
+                                <button type="submit" class="btn" id="submit" onclick="">Submit Form</button>
+                                <button type="reset" class="btn" id="reset">Reset</button>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </center>
+    </body>
+</html>

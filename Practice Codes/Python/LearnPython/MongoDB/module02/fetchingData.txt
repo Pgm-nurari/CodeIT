@@ -1,0 +1,37 @@
+|----------------------------------------|
+        File: fetchData.py
+|----------------------------------------|
+
+singleData()
+ → Uses find_one() to fetch and print a single document from the table.
+  ✅ Quick look at any one document in the collection.
+
+multipleData()
+ → Uses find() to print all documents in the table.
+ → Also converts the data into a Pandas DataFrame using:
+  df = pd.DataFrame(table.find())
+  ✅ Allows for Pandas-style analysis using .describe().
+
+specificAttributes()
+ → Fetches and prints only selected fields: 'id', 'name', and 'email' (excludes '_id').
+ → Shows how to use projection in find() using:
+  table.find({}, { "_id": 0, "id": 1, ... })
+ → Includes an optional example of mixing inclusion and exclusion, which isn't allowed unless _id is involved.
+
+
+|----------------------------------------|
+        File: queryFetch.py
+|----------------------------------------|
+
+queryOne()
+ → Filters using a specific field (email) with:
+  table.find({ 'email': '<value>' })
+
+queryTwo()
+ → Uses $gt (greater than) operator to return names lexicographically greater than 'S':
+  { 'name': { '$gt': 'S' } }
+
+queryThree()
+ → Uses regular expression query to match names starting with 'S' (case-insensitive):
+  { 'name': { '$regex': r'^S', '$options': 'i' } }
+  ✅ ^S → begins with 'S'; 'i' → ignore case.

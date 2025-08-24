@@ -1,0 +1,14 @@
+There are 4 read methods:
+    1. read(n) => Reads characters from 1 to 'n' counts.
+    2. readline(n) => Reads 'n' lines of data.
+    3. readlines() => Returns all the lines as an element of a list
+There are 2 write methods:
+    1. write() => Already covered.
+    2. writelines(<iterable : string_type>) => Insert all lines as a list.
+There are 2 other methods namely:
+    1. tell() => Returns the position of pointer as an integer.
+    2. seek(n,s) => Places the pointer at 's' and seeks upto next 'n' counts from there.
+
+code to copy a file through powershell:
+copy-item  -path C:\Users\Sabhyam\OneDrive\Programs\Python\LearnPython\Files\csvScript1.py 
+           -destination C:\Users\Sabhyam\OneDrive\Programs\Python\LearnPython\Files\csvScript2.py  

@@ -1,0 +1,17 @@
+In Python3 we can use 'match-case' instead of a 'switch-case' funtionality.
+Syntax: 
+    match subject:
+        case condition_1 :
+            statement_01
+            break
+        case cadition_02 :
+            statement_02
+            break
+        case condition_03 :
+            statement_03
+            break
+        case _ :
+            default_statement 
+            break
+
+The program of menu-driven calculator is a best example for this. Let's try it.

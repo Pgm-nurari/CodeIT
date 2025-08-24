@@ -1,0 +1,6 @@
+CSV - Comma Separated Values
+
+The fields are separated by commas
+
+file_obj = open("Filename.csv",'r')
+file_reader_obj = file_obj.reader()

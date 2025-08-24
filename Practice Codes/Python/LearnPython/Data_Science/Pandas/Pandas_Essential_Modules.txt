@@ -1,0 +1,35 @@
+Working with CSV files using `pandas` involves a variety of methods. Here are some basic `pandas` methods that are commonly used for operating on CSV files:
+
+1. `pd.read_csv()`: This function is used to read data from a CSV file and create a `pandas` DataFrame. It can handle various file formats and options.
+
+2. `DataFrame.head()`: Returns the first few rows of the DataFrame (by default, the first 5 rows).
+
+3. `DataFrame.tail()`: Returns the last few rows of the DataFrame (by default, the last 5 rows).
+
+4. `DataFrame.info()`: Provides a concise summary of the DataFrame, including data types and non-null counts.
+
+5. `DataFrame.describe()`: Generates descriptive statistics for numeric columns in the DataFrame, such as mean, median, min, max, etc.
+
+6. `DataFrame.to_csv()`: Writes the DataFrame to a CSV file. It is the counterpart of `pd.read_csv()` and allows you to save your DataFrame as a CSV file.
+
+7. `DataFrame.iloc[]` and `DataFrame.loc[]`: These indexing methods are used for selecting rows and columns based on their integer position (`iloc[]`) or 
+labels/index (`loc[]`).
+
+8. `DataFrame.drop()`: Removes rows or columns from the DataFrame based on specified labels or indices.
+
+9. `DataFrame.groupby()`: Allows you to group the data based on one or more columns, enabling you to perform aggregate operations on the groups.
+
+10. `DataFrame.sort_values()`: Sorts the DataFrame based on the values of one or more columns.
+
+11. `DataFrame.merge()`: Merges two DataFrames based on a common column or index.
+
+12. `DataFrame.rename()`: Renames columns in the DataFrame.
+
+13. `DataFrame.apply()`: Applies a function along rows or columns of the DataFrame.
+
+14. `DataFrame.isnull()`: Checks for missing values in the DataFrame and returns a boolean DataFrame where `True` indicates a missing value.
+
+15. `DataFrame.fillna()`: Fills missing values with specified data.
+
+These are just some of the fundamental `pandas` methods that you can use to operate on CSV files and perform data manipulations. As you become more familiar 
+with `pandas`, you'll discover many other powerful functions that can make data analysis and manipulation more efficient and convenient.

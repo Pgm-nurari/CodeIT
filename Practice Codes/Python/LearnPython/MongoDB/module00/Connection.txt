@@ -1,0 +1,25 @@
+|----------> File: 00mongo.py <----------|
+    The code in this file looks good right? But, it is not. The statement to fetch the database names:
+    
+        con = checkConnection()
+        print(con.list_database_names())
+    
+    will give us an error: pymongo.errors.ServerSelectionTimeoutError
+    
+    That means the connection is not made with MongoDB server. But, when the code is run we are not notified whether the connection made is a
+    success or not. The statement : 
+
+        c = MongoClient(host=host_name, port=port_num)
+
+    accepts hostname and portnumber passed into the argument. But the hostname passed is "loca" and not "localhost". Hence the connection will
+    not be successful at all. But we were not notified of it. That is because MongoClient does "lazy connection" ie. it does not actually
+    connect to MongoDB when we instantiate it. So inorder to connect, we must use the below command to check if it has connected or not:
+        
+        c.admin.command("ping")
+
+    Which forces the MongoClient to establish the connection first.
+
+    You can check the corrected and better code in 2nd function : checkConnectionSecond()
+|----------------------------------------|
+
+

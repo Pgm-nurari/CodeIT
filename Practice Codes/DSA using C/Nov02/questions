@@ -1,0 +1,8 @@
+Consider the following operations performed on a stack of size 5
+ push A then pop push B, C then pop then push D then pop then push E
+Which of the following operations are correct?
+a) stack operations are performed smoothly
+b) overflow occurs
+c) underflow occurs
+d) all of them 
+

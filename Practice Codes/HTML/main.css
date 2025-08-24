@@ -1,0 +1,36 @@
+html {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    background-color: #333;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin: auto 5px;
+    background-color:darkslategrey;
+    padding: 10px 0;
+    border-radius: 10px;
+    
+}
+
+nav {
+    text-align: center; 
+}
+
+nav a {
+    text-decoration: none; /* Remove underlines from links */
+    color: white; 
+    margin: 0 10px; /* Add horizontal margin to separate links */
+    padding: 5px 10px; /* Add padding to the links for better spacing */
+    border-radius: 20px; /* Add rounded corners to the links */
+    background-color: #555; /* Set background color for the links */
+}
+
+nav a:hover {
+    background-color: #777; /* Set background color for links on hover */
+}
+

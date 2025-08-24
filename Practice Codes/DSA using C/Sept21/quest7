@@ -1,0 +1,3 @@
+C program to store information of students using Structure. The name of the 
+structure should be student, the members of the structure are, first name, roll 
+no, marks. Enter 5 details, structure variable should be declared as array.

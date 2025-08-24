@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let con=confirm("Do you want to continue?")
+        if (con){
+            alert("You pressed OK!")
+            document.write("You pressed ok!")
+        }
+        else{
+            alert("Why did you press cancel")
+            document.write("We hate you")
+            document.write("<br>")
+            var retVal = prompt("Enter your name : ", "your name here");
+            document.write("We will always hate you : " + retVal);
+
+        }
+    </script>
+</body>
+</html>

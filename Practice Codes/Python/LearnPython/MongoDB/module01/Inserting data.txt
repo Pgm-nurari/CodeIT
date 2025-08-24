@@ -1,0 +1,25 @@
+|----------------------------------------|
+          File: insertOne.py
+|----------------------------------------|
+
+
+> In this we use the insert_one() function to enter the data into the table.
+    table_name.insert_one( <dictionary entry> )
+
+> The data is passed as a Dictionary into the function. 
+
+> This statement returns an object : insertOneResult object, that contains the ids of the entered data. It can be accessed by the following command:
+    insertOneResultObject.inserted_id
+
+
+|----------------------------------------|
+          File: insertMany.py
+|----------------------------------------|
+
+> In this we use the insert_many() function to enter the data into the table.
+    table_name.insert_many( <list of entries> )
+
+> The data is passed as a List( Dictionaries ) into the function. 
+
+> This statement returns an object : insertManyResult object, that contains the ids of the entered datas. Can be accessed by the following command:
+    insertManyResultObject.inserted_ids
