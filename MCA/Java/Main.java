@@ -9,7 +9,7 @@ class Employee{
     String des;
 }
 
-class Main{
+public class Main{
     public static void main(String [] args){
         Students s1 = new Students();
         s1.studno = 30;
