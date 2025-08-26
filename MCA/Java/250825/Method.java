@@ -4,11 +4,9 @@ class myFunction{
     }
 }
 
-
-
 public class Method extends myFunction{
     public static void main(String[] args) {
-        // myFunction obj = new myFunction();
-        // obj.display();
+        myFunction obj = new myFunction();
+        obj.display();
     }
 }
