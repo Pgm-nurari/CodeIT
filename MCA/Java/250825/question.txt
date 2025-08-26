@@ -1,0 +1,3 @@
+Write down a java program to define a class Bank with instance variable
+accno, name, acctype, and balamt. Define a method to store the values into the variables and another method to 
+display the same. Define an object and call the methods.
