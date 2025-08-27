@@ -1,0 +1,3 @@
+Write down a java program to declare a class Items with the instance variables itemno, itename, quantity and price
+Define method input to store the values into the variables add another method to print the Same
+Store 3 item details

@@ -1,6 +1,3 @@
-import java.util.Scanner;
-import java.util.Formatter;
-
 class Bank{
     int accno;
     String accName;

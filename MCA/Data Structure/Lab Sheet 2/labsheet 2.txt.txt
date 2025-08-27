@@ -1,0 +1,8 @@
+Lab sheet 2
+Write C programs to do the following:
+1.To perform a search on an array of numbers (Identify the appropriate search and apply)
+2.To perform a search on alphabets (Identify the appropriate search and apply)
+3.To sort a list of characters in alphabetical order using bubble sort
+4.To sort ages of students in ascending order using insertion sort
+5.To sort the prices of items in descending order using bubble sort
+6.To sort a list of numbers in descending order using insertion sort
