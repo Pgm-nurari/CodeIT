@@ -1,0 +1,2 @@
+create a class names emp with a method to display a message . write down a java program to invoke the method and display the message
+
