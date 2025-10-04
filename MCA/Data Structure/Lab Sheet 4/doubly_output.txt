@@ -1,0 +1,577 @@
+Enter number of nodes: 3
+10
+20
+30
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 1
+10 20 30 
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 2
+Enter value: 30
+Found at position 3
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 4
+10 30 
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 5
+20 
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 6
+Middle node: 20
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 7
+Enter value: 100
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 1
+100 10 20 30 
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 8
+Enter value: 200
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 9
+Enter key and value: 200
+300
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 10
+Enter key and value: 300
+150
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 1
+100 10 20 30 200 150 300 
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 11
+Enter two values and new value: 150 
+300
+175
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 1
+100 10 20 30 200 150 175 300 
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 13
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 1
+10 20 30 200 150 175 300 
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 14
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 1
+10 20 30 200 150 175 
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 15
+Enter key: 200
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 1
+10 20 30 200 175 
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 16
+Enter key: 200
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 1
+10 20 200 175 
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 17
+Enter position: 2
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 1
+10 200 175 
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 18
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 1
+175 200 10 
+
+1.Display
+2.Search
+3.Count
+4.Display alternate
+5.Display even pos
+6.Find middle
+7.Insert first
+8.Insert last
+9.Insert after
+10.Insert before
+11.Insert between
+12.Insert at pos
+13.Delete first
+14.Delete last
+15.Delete after
+16.Delete before
+17.Delete at pos
+18.Reverse
+0.Exit
+Choice: 0

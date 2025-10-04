@@ -1,0 +1,603 @@
+Enter number of nodes to create: 5
+Enter value for node 1: 40
+Enter value for node 2: 50
+Enter value for node 3: 60
+Enter value for node 4: 70
+Enter value for node 5: 80
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 1
+40 50 60 70 80 
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 2
+Enter value: 70
+Value 70 found at position 4
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 3
+Total nodes: 5
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 4
+40 60 80 
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 5
+50 70 
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 6
+Middle Node: 60
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 7
+Enter value: 30
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 8
+Enter value: 90
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 9
+Enter key and value: 50 55
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 10
+Enter key and value: 40 35
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 11
+Enter 2 keys and value: 60 70 65
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 1
+30 35 40 50 55 60 65 70 80 90 
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 12
+Enter position and value: 3 45
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 1
+30 35 45 40 50 55 60 65 70 80 90 
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 13
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 14
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 15
+Enter key: 50
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 16
+Enter key: 45
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 17
+Enter 2 keys: 60 70
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 1
+45 40 50 60 70 80 
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 18
+Enter position: 1
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 1
+40 50 60 70 80 
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 19
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 1
+80 70 60 50 40 
+
+Menu:
+1. Display list
+2. Search value
+3. Count nodes
+4. Display alternate nodes
+5. Display even positioned nodes
+6. Find middle node(s)
+7. Insert first
+8. Insert last
+9. Insert after
+10. Insert before
+11. Insert between 2 nodes
+12. Insert at a position
+13. Delete first
+14. Delete last
+15. Delete after
+16. Delete before
+17. Delete between 2 nodes
+18. Delete at a position
+19. Reverse the list
+20. Exit
+Enter choice: 20
