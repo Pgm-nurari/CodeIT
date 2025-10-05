@@ -1,0 +1,2 @@
+Write a Java program to define a class named Circle with the instance variable radius and the methods calculateArea() and calculateCircum() 
+which accepts the radius from the user,  calculates and print the Area and Circumference of the circle.

@@ -1,0 +1,4 @@
+Write a Java program to create a class called Animal with a method called makeSound(). 
+Create a subclass called Dog that overrides the makeSound() method to bark.  
+Create another subclass called Cat that overrides the makeSound() method to meow. 
+Invoke the methods using dynamic polymorphism.

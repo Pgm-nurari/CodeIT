@@ -1,0 +1,6 @@
+Write a Java program to create a class known as Person with the instance variables fname and lname  and method called setName(). Create a subclass called Employee that adds a new method named getName(). Invoke both methods from main function using the object of Employee class.
+
+
+
+
+Create a class Shape which contains the methods to calculate the area of Triangle, Rectangle, Circle and Square.(Use method overloading).

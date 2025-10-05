@@ -1,0 +1,72 @@
+Here are the Java codes for the given assignments:
+
+1. Sum Values of an Array
+public class SumArray {
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 5};
+        int sum = sumArray(array);
+        System.out.println("Sum: " + sum);
+    }
+
+    public static int sumArray(int[] array) {
+        int sum = 0;
+        for (int num : array) {
+            sum += num;
+        }
+        return sum;
+    }
+}
+
+
+
+
+2. Test if an Array Contains a Specific Value
+public class ContainsValue {
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 5};
+        int target = 3;
+        boolean contains = containsValue(array, target);
+        System.out.println("Array contains " + target + ": " + contains);
+    }
+
+    public static boolean containsValue(int[] array, int target) {
+        for (int num : array) {
+            if (num == target) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+
+
+3. Find Maximum and Minimum Value of an Array
+public class MaxMinArray {
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 5};
+        int max = findMax(array);
+        int min = findMin(array);
+        System.out.println("Max: " + max);
+        System.out.println("Min: " + min);
+    }
+
+    public static int findMax(int[] array) {
+        int max = array[0];
+        for (int num : array) {
+            if (num > max) {
+                max = num;
+            }
+        }
+        return max;
+    }
+
+    public static int findMin(int[] array) {
+        int min = array[0];
+        for (int num : array) {
+            if (num < min) {
+                min = num;
+            }
+        }
+        return min;
+    }
+}
