@@ -1,0 +1,92 @@
+--- Circular Singly Linked List Menu ---
+1. Create List
+2. Display List
+3. Insert at First
+4. Insert at Last
+5. Delete First
+6. Delete Last
+7. Exit
+Enter your choice: 1
+Enter number of nodes: 5
+Enter data for node 1: 10
+Enter data for node 2: 20
+Enter data for node 3: 30
+Enter data for node 4: 40
+Enter data for node 5: 50
+
+--- Circular Singly Linked List Menu ---
+1. Create List
+2. Display List
+3. Insert at First
+4. Insert at Last
+5. Delete First
+6. Delete Last
+7. Exit
+Enter your choice: 2
+
+Circular Singly Linked List Visualization:
+HEAD -> [10] -> [20] -> [30] -> [40] -> [50] -> HEAD
+
+--- Circular Singly Linked List Menu ---
+1. Create List
+2. Display List
+3. Insert at First
+4. Insert at Last
+5. Delete First
+6. Delete Last
+7. Exit
+Enter your choice: 3
+Enter data: 5
+
+Circular Singly Linked List Visualization:
+HEAD -> [5] -> [10] -> [20] -> [30] -> [40] -> [50] -> HEAD
+
+--- Circular Singly Linked List Menu ---
+1. Create List
+2. Display List
+3. Insert at First
+4. Insert at Last
+5. Delete First
+6. Delete Last
+7. Exit
+Enter your choice: 4
+Enter data: 55
+
+Circular Singly Linked List Visualization:
+HEAD -> [5] -> [10] -> [20] -> [30] -> [40] -> [50] -> [55] -> HEAD
+
+--- Circular Singly Linked List Menu ---
+1. Create List
+2. Display List
+3. Insert at First
+4. Insert at Last
+5. Delete First
+6. Delete Last
+7. Exit
+Enter your choice: 5
+
+Circular Singly Linked List Visualization:
+HEAD -> [10] -> [20] -> [30] -> [40] -> [50] -> [55] -> HEAD
+
+--- Circular Singly Linked List Menu ---
+1. Create List
+2. Display List
+3. Insert at First
+4. Insert at Last
+5. Delete First
+6. Delete Last
+7. Exit
+Enter your choice: 6
+
+Circular Singly Linked List Visualization:
+HEAD -> [10] -> [20] -> [30] -> [40] -> [50] -> HEAD
+
+--- Circular Singly Linked List Menu ---
+1. Create List
+2. Display List
+3. Insert at First
+4. Insert at Last
+5. Delete First
+6. Delete Last
+7. Exit
+Enter your choice: 7
