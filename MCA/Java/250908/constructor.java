@@ -24,7 +24,7 @@ class emp{
     
 }
 
-class constructor{
+public class constructor{
     public static void main(String[] args)
     {
         emp e1=new emp(101,"sam");

@@ -1,2 +1,8 @@
-Write a java program which creates a class Person with the instance variable name and method getName() to return the name. The class should have a parameterised constructor which takes name as the argument and assign it in the instance variable. Derive a class Employee from the class Person and the derived class should have an instance variable id. The class should have a method getId() to return the id and a parameterised constructor which takes id and name as the parameters to assign the values in the corresponding instance variables of the classes using its constructors. 
+Write a java program which creates a class Person with the instance variable name and method getName() to return the name. 
+
+The class should have a parameterised constructor which takes name as the argument and assign it in the instance variable. 
+
+Derive a class Employee from the class Person and the derived class should have an instance variable id. 
+
+The class should have a method getId() to return the id and a parameterised constructor which takes id and name as the parameters to assign the values in the corresponding instance variables of the classes using its constructors. 
 Display the assigned values using the getName() and getId() methods.
