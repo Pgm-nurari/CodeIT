@@ -1,0 +1,11 @@
+ID,Name,Age,Gender,City,Salary,Experience
+1,John,28,Male,New York,50000,3
+2,Sara,,Female,Los Angeles,52000,4
+3,David,35,Male,Chicago,NaN,8
+4,Linda,29,Female,New york,58000,5
+5,Michael,41,Male,Miami,62000,10
+6,Emma,NaN,Female,Los Angeles,54000,4
+7,Robert,23,Male,CHICAGO,49000,2
+8,Olivia,32,Female,Miami,1000000,7
+9,James,27,Male,New York,51000,3
+10,Patricia,38,Female,Los Angeles,,9

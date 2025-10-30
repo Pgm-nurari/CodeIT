@@ -1,0 +1,6 @@
+1.	an automobile company manufactures, both 2 wheelers and 4 wheelers. according to the given data below:
+ 	- total no. of vehicles
+	- total no. of wheels
+	Find, how many 2 wheelers, as well as 4 wheelers need to manufacture?
+
+

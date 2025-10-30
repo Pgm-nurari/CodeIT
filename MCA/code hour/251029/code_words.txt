@@ -1,0 +1,9 @@
+2 friends exchange messages using code words
+A -> I : 1 -> 9
+J -> Z : 10# -> 21#
+
+Input
+110#
+
+Output 
+aj
