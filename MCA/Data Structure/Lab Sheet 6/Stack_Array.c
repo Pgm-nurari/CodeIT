@@ -64,6 +64,15 @@ void push(Stack *s){
     }
 }
 
+void peek(Stack *s){
+    if (isEmpty(s)){
+        printf("\nThe Stack is Empty\n");
+    }
+    else{
+        printf("\nTop element is: %d\n", s->arr[s->top]);
+    }
+}
+
 void display(Stack *s){
     if (isEmpty(s)){
         printf("\nThe Stack is Empty");
@@ -77,13 +86,61 @@ void display(Stack *s){
 }
 
 int main(){
-    int n;
+    int n, choice, popped_val;
     Stack s;
     printf("\nEnter the size of the stack: ");
     scanf("%d",&n);
 
     initialize(&s, n);
 
-    printf("%d", s.size); // Size of the Stack!
+    while(1){
+        printf("\n--- Stack Menu (Array) ---\n");
+        printf("1. Push\n");
+        printf("2. Pop\n");
+        printf("3. Display\n");
+        printf("4. Peek (Show Top)\n");
+        printf("5. Exit\n");
+        printf("----------------------------\n");
+        printf("Enter your choice: ");
 
+        if (scanf("%d", &choice) != 1) {
+            while (getchar() != '\n');
+            printf("\nInvalid input. Please enter a number.\n");
+            continue;
+        }
+
+        switch (choice){
+            case 1:
+                push(&s);
+                break;
+
+            case 2:
+                if (isEmpty(&s)){
+                    printf("\nUnderflow!! Cannot pop.\n");
+                }
+                else{
+                    popped_val = pop(&s);
+                    printf("\nPopped element: %d\n", popped_val);
+                }
+                break;
+
+            case 3:
+                display(&s);
+                break;
+            
+            case 4:
+                peek(&s);
+                break;
+
+            case 5:
+                printf("\nExiting program. Freeing memory...\n");
+                free(s.arr);
+                exit(0);
+
+            default:
+                printf("\nInvalid choice. Please enter a number between 1 and 5.\n");
+        }
+    }
+
+    return 0;
 }
