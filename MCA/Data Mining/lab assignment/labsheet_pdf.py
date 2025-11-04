@@ -135,9 +135,15 @@ Q1 = numeric_df.quantile(0.25)
 Q3 = numeric_df.quantile(0.75)
 IQR = Q3 - Q1
 filtered_df = df[~((numeric_df < (Q1 - 1.5 * IQR)) | (numeric_df > (Q3 + 1.5 * IQR))).any(axis=1)]
-
-images.append((save_df_as_image(filtered_df, "15_outliers_removed.png", "After Dropping Outliers"),
-               "Figure 15: Dataset After Dropping Outliers"))
+# Calculate new dataset shape
+new_shape = filtered_df.shape
+# Create image for filtered dataset
+outlier_img = save_df_as_image(filtered_df, "15_outliers_removed.png", "After Dropping Outliers")
+# Append to image list with shape info in caption
+images.append(
+    (outlier_img,
+     f"Figure 15: Dataset After Dropping Outliers (New Shape: {new_shape[0]} rows × {new_shape[1]} columns)")
+)
 
 
 from reportlab.lib.pagesizes import A4 as PAGE_SIZE
