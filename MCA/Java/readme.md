@@ -80,20 +80,73 @@ This directory contains Java programming code organized by topic and assignment/
 - Contains: [`AnimalSound.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251003/AnimalSound.java), [`251003.txt`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251003/251003.txt)
 - Description: More on polymorphism and sound simulation.
 
+### 251023
+
+- Contains:
+  - [`AbstractClass.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251023/AbstractClass.java)
+  - [`Circle.class`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251023/Circle.class)
+  - [`Rectangle.class`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251023/Rectangle.class)
+  - [`Shape.class`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251023/Shape.class)
+  - [`Square.class`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251023/Square.class)
+  - [`abstract_instantiation_error.png`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251023/abstract_instantiation_error.png)
+- Description: Abstract classes and abstract methods. Demonstrates abstract class implementation with shape hierarchy (Circle, Rectangle, Square) and error handling for abstract class instantiation.
+
+### 251024
+
+- Contains:
+  - [`EmployeeDemo.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251024/EmployeeDemo.java)
+  - [`question.txt`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251024/question.txt)
+- Description: Employee-related Java programming exercises and demonstrations.
+
+### 251031
+
+- Contains:
+  - [`InterfaceDemo.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251031/InterfaceDemo.java)
+  - [`Myclass.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251031/Myclass.java)
+- Description: Interface implementation in Java. Demonstrates how to define and implement interfaces in Java classes.
+
+### 251101
+
+- Contains:
+  - [`CheckedExceptions.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251101/CheckedExceptions.java)
+  - [`ExceptionDemo.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251101/ExceptionDemo.java)
+  - [`ExceptionDemoTwo.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251101/ExceptionDemoTwo.java)
+  - [`Myfile.txt`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251101/Myfile.txt)
+- Description: Exception handling in Java. Covers checked exceptions, try-catch blocks, and various exception handling scenarios.
+
+### 251114
+
+- Contains:
+  - [`ArithmeticHandler.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251114/ArithmeticHandler.java)
+  - [`OddNumberException.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251114/OddNumberException.java)
+  - [`StudentSerialization.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251114/StudentSerialization.java)
+  - [`questions.txt`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/251114/questions.txt)
+- Description: Custom exception handling and object serialization. Includes creating custom exceptions (OddNumberException), arithmetic error handling, and serialization/deserialization of objects.
+
 ### AccessModifiers
 
 - Contains subfolder: `AccessSpecs`
-- Description: Code and notes on Java access specifiers such as public, private, protected, and default.
+  - [`AccessDemo.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/AccessModifiers/AccessSpecs/AccessDemo.java)
+  - [`Demo1.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/AccessModifiers/AccessSpecs/Demo1.java)
+  - Package: `mypack`
+- Description: Code and notes on Java access specifiers such as public, private, protected, and default. Demonstrates access control with practical examples.
 
 ### LAB ASGNT 1
 
-- Contains multiple Java files including:
+- Contains:
   - [`ArrayStats.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/LAB%20ASGNT%201/ArrayStats.java)
   - [`Book.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/LAB%20ASGNT%201/Book.java)
   - [`Cat.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/LAB%20ASGNT%201/Cat.java)
+  - [`Demo1.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/LAB%20ASGNT%201/Demo1.java)
+  - [`EmployeeArray.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/LAB%20ASGNT%201/EmployeeArray.java)
   - [`HelloWorld.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/LAB%20ASGNT%201/HelloWorld.java)
+  - [`LargestOfThree.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/LAB%20ASGNT%201/LargestOfThree.java)
+  - [`MatrixAddition.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/LAB%20ASGNT%201/MatrixAddition.java)
+  - [`MultiplicationTable.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/LAB%20ASGNT%201/MultiplicationTable.java)
+  - [`Person.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/LAB%20ASGNT%201/Person.java)
+  - [`ReverseNumber.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/LAB%20ASGNT%201/ReverseNumber.java)
   - [`StudentTest.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/LAB%20ASGNT%201/StudentTest.java)
-  - And more...
+  - [`java_lab_solutions.pdf`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/LAB%20ASGNT%201/java_lab_solutions.pdf)
 - Description: Lab assignments covering a range of Java basics—arrays, classes, objects, inheritance, simple calculations, and file I/O.
 
 ---
