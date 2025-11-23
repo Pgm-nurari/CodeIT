@@ -50,7 +50,7 @@ This directory contains Java programming code organized by topic and assignment/
 ### 250915
 
 - Contains:
-  - [`PersonEmployees.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/250915/PersonEmployees.java) 
+  - [`PersonEmployees.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/250915/PersonEmployees.java)
   - [`Shape.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/250915/Shape.java)
   - [`questions.txt`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/250915/questions.txt)
 - Description:
@@ -72,7 +72,7 @@ This directory contains Java programming code organized by topic and assignment/
   - [`AnimalSounds.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/250922/AnimalSounds.java)
   - [`EmployeeDetails.java`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/250922/EmployeeDetails.java)
   - [`employee.txt`](https://github.com/Pgm-nurari/CodeIT/blob/main/MCA/Java/250922/employee.txt)
-- Description: 
+- Description:
   - Dynamic Polymorphism, Method Overriding or Run Time Polymorphism, demonstrated in employee and animal classes.
 
 ### 251003
