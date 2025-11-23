@@ -1,0 +1,5 @@
+1. Write a java program which accept two numbers from the user and perform the all arithmetical operations. Handle the arithmetic exception using try...catch and finally blocks.
+
+2. Write a Java program to create a method that takes an integer as a parameter and throws an exception if the number is odd.
+
+3. Define a class named Students with the fields studno, studname, programme and year. Do the serialization and deserialization in java using a file named Students.txt
