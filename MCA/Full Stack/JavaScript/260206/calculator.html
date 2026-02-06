@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <script type="text/javascript">
+        function Add(){
+            var a = parseFloat(document.getElementById('num1').value);
+            var b = parseFloat(document.getElementById('num2').value);
+            var c = a + b;
+            document.getElementById('res').value = c;
+        }
+
+        function Subtract(){
+            var a = parseFloat(document.getElementById('num1').value);
+            var b = parseFloat(document.getElementById('num2').value);
+            var c = a - b;
+            document.getElementById('res').value = c;
+        }
+
+        function Multiply(){
+            var a = parseFloat(document.getElementById('num1').value);
+            var b = parseFloat(document.getElementById('num2').value);
+            var c = a * b;
+            document.getElementById('res').value = c;
+        }
+
+        function Divide(){
+            var a = parseFloat(document.getElementById('num1').value);
+            var b = parseFloat(document.getElementById('num2').value);
+            var c = a / b;
+            document.getElementById('res').value = c;
+        }
+
+        function Modulo(){
+            var a = parseFloat(document.getElementById('num1').value);
+            var b = parseFloat(document.getElementById('num2').value);
+            var c = a % b;
+            document.getElementById('res').value = c;
+        }
+
+        function ClearALL(){
+            document.getElementById('num1').value = '';
+            document.getElementById('num2').value = '';
+            document.getElementById('res').value = '';
+
+            document.getElementById('num1').focus();
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Functions in JS : Calculator</h1>
+
+    <form action="">
+        <div style="margin-top: 10px; padding: 10px; border: 1px solid black; width: 200px;">
+        Enter Number 1: <input type="text" id="num1"> <br>
+        Enter Number 2: <input type="text" id="num2"> <br>
+        Result: <input type="text" id="res" readonly> <br>
+        
+
+        <br>
+        <input type="button" value="+" onclick="Add()">
+        <input type="button" value="-" onclick="Subtract()">
+        <input type="button" value="*" onclick="Multiply()">
+        <input type="button" value="/" onclick="Divide()">
+        <input type="button" value="%" onclick="Modulo()">
+        <input type="button" value="Clear" onclick="ClearALL()">
+       </div>
+    </form>
+</body>
+</html>

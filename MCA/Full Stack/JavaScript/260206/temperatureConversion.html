@@ -1,0 +1,35 @@
+<!-- write a javascript code to convert the temperature from celcius to fahrenheit and fahrenheit to celsius. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+
+    <script>
+        function cToF() {
+            var celsius = parseFloat(document.getElementById('temp').value);
+            var fahrenheit = (celsius * 9/5) + 32;
+            document.getElementById('res').value = fahrenheit.toFixed(2) + " °F";
+        }
+
+        function fToC() {
+            var fahrenheit = parseFloat(document.getElementById('temp').value);
+            var celsius = (fahrenheit - 32) * 5/9;
+            document.getElementById('res').value = celsius.toFixed(2) + " °C";
+        }
+    </script>
+
+</head>
+<body>
+    <form action="" style="width: max-content;">
+        <h1>Temperature Conversion</h1>
+        Enter Temperature: <input type="text" id="temp"> <br>
+        <input type="button" value="Celsius to Fahrenheit" onclick="cToF()">
+        <input type="button" value="Fahrenheit to Celsius" onclick="fToC()">
+        <br>
+        Result: <input type="text" id="res" readonly>
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest of 2 numbers</title>
+
+    <script>
+        function FindLargest(){
+            var a = parseFloat(document.getElementById('num1').value);
+            var b = parseFloat(document.getElementById('num2').value);
+
+            if(a > b){
+                document.getElementById('res').value = a + " is greater than " + b;
+            }
+            else if(b > a){
+                document.getElementById('res').value = b + " is greater than " + a;
+            }
+            else{
+                document.getElementById('res').value = "Both numbers are equal";
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Conditional Statements in JS : largest of 2 numbers</h1>
+
+    <form action="">
+        <table>
+            <tr>
+                <td>Enter Number 1:</td>
+                <td><input type="text" id="num1"></td>
+            </tr>
+
+            <tr>
+                <td>Enter Number 2:</td>
+                <td><input type="text" id="num2"></td>
+            </tr>
+
+            <tr>
+                <td>Result:</td>
+                <td><input type="text" id="res" readonly></td>
+            </tr>
+        </table>
+        <input type="button" value="Find Largest" onclick="FindLargest()">
+    </form>
+</body>
+</html>

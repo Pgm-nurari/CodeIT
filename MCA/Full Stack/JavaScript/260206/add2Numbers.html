@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Add 2 Numbers</title>
 
     <script type="text/javascript">
         function Sum(){
@@ -12,16 +12,26 @@
             var c = a + b;
             document.getElementById('res').value = c;
         }
+
+        function ClearALL(){
+            document.getElementById('num1').value = '';
+            document.getElementById('num2').value = '';
+            document.getElementById('res').value = '';
+
+            document.getElementById('num1').focus();
+        }
     </script>
 
 </head>
 <body>
-    
+    <h1>Functions in JS : Add 2 Numbers</h1>
     <form>
         Enter Number 1: <input type="text" id="num1"> <br>
         Enter Number 2: <input type="text" id="num2"> <br>
         Result: <input type="text" id="res" readonly> <br>
         <input type="button" value="Add" onclick="Sum()">
+
+        <input type="button" value="clear" onclick="ClearALL()">
     </form>
 
 </body>

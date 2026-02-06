@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade</title>
+
+    <script>
+        function CalculateGrade(){
+            var cProg = parseFloat(document.getElementById('cProg').value) || 0;
+            var cppProg = parseFloat(document.getElementById('cppProg').value) || 0;
+            var javaProg = parseFloat(document.getElementById('javaProg').value) || 0;
+            var webDev = parseFloat(document.getElementById('webDev').value) || 0;
+
+            var result = cProg + cppProg + javaProg + webDev;
+            var average = (result) / 4;
+            var grade;
+
+            if(average >= 90){
+                grade = 'A';
+            }
+            else if(average >= 80){
+                grade = 'B';
+            }
+            else if(average >= 70){
+                grade = 'C';
+            }
+            else if(average >= 60){
+                grade = 'D';
+            }
+            else{
+                grade = 'F';
+            }
+
+            document.getElementById('result').value = result;
+            document.getElementById('average').value = average.toFixed(2);
+            document.getElementById('grade').value = grade;
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Student Grade Calculator</h1>
+
+    <form action="">
+        <table border="0" cellpadding="10" cellspacing="5">
+            <tr>
+                <td><label for="cProg">C Programming:</label></td>
+                <td><input type="number" id="cProg" placeholder="Enter marks" min="0" max="100"></td>
+                <td>/100</td>
+            </tr>
+            <tr>
+                <td><label for="cppProg">C++ Programming:</label></td>
+                <td><input type="number" id="cppProg" placeholder="Enter marks" min="0" max="100"></td>
+                <td>/100</td>
+            </tr>
+            <tr>
+                <td><label for="javaProg">Java Programming:</label></td>
+                <td><input type="number" id="javaProg" placeholder="Enter marks" min="0" max="100"></td>
+                <td>/100</td>
+            </tr>
+            <tr>
+                <td><label for="webDev">Web Development:</label></td>
+                <td><input type="number" id="webDev" placeholder="Enter marks" min="0" max="100"></td>
+                <td>/100</td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr></td>
+            </tr>
+            <tr>
+                <td><label for="result">Result:</label></td>
+                <td><input type="text" id="result" readonly></td>
+                <td>/400</td>
+            </tr>
+            <tr>
+                <td><label for="average">Average:</label></td>
+                <td><input type="number" id="average" readonly></td>
+            </tr>
+            <tr>
+                <td><label for="grade">Grade:</label></td>
+                <td><input type="text" id="grade" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="button" onclick="CalculateGrade()">Calculate</button></td>
+            </tr>
+        </table>
+    </form>
+
+    
+</body>
+</html>
