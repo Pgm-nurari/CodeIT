@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For ... in Loop</title>
+
+    
+
+</head>
+<body>
+    <h1>For ... in Loop</h1>
+    <p id="result"></p>
+    <button onclick="displayPersonInfo()">Show Person Info</button>
+    <script>
+        var person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+
+        var result = "";
+        for (var key in person) {
+            result += key + ": " + person[key] + "<br>";
+        }
+        document.getElementById("result").innerHTML = result;
+    </script>
+</body>
+</html>

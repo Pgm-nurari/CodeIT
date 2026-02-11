@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Natural Numbers</title>
+
+        <script>
+        function displayNaturalNumbers() {
+            var n = document.getElementById("nValue").value;
+            var result = "";
+            for (var i = 1; i <= n; i++) {
+                result += i + " ";
+            }
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+
+</head>
+<body>
+
+    <h1>Print Natural Numbers</h1>
+    <input type="number" id="nValue" placeholder="Enter a number">
+    <button onclick="displayNaturalNumbers()">Print</button>
+    <p id="result"></p>
+
+
+</body>
+</html>

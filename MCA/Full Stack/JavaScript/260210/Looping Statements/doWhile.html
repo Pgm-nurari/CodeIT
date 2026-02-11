@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do While Loop</title>
+
+    <script>
+        function displayOddNumbers() {
+            var n = document.getElementById("nValue").value;
+            var result = "";
+            var i = 1;
+            do {
+                if (i % 2 !== 0) {
+                    result += i + " ";
+                }
+                i++;
+            } while (i <= n);
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+    
+</head>
+<body>
+    <!-- odd numbers using do-while loop   -->
+    <h1>Print Odd Numbers</h1>
+    <input type="number" id="nValue" placeholder="Enter a number">
+    <button onclick="displayOddNumbers()">Print Odd Numbers</button>
+    <p id="result"></p>
+    
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiples of 5</title>
+</head>
+<body>
+    <h1>Print Multiples of 5</h1>
+    <input type="number" id="nValue" placeholder="Enter a number">
+    <button onclick="displayMultiplesOfFive()">Print Multiples of 5</button>
+    <p id="result"></p>
+
+    <script>
+        function displayMultiplesOfFive() {
+            var n = document.getElementById("nValue").value;
+            var result = "";
+            for (var i = 1; (i <= n ); i+=5) {
+                if (i % 5 === 0) {
+                    result += i + " ";
+                }
+            }
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+
+</body>
+</html>
