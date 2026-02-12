@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM : text box validtn.</title>
+
+    <script>
+        function validateForm() {
+            let input = document.getElementById("myInput").value;  //DOM method
+            if (input === "") {
+                alert("Input cannot be empty!");  //Alert box
+                return false;  //Prevent form submission
+            }
+            alert("Form Submitted Successfully!");  //Alert box
+            return true;  //Allow form submission
+        }
+    </script>
+
+</head>
+<body>
+    <form onsubmit="return validateForm()">   <!--onsubmit is a Form submission event handler-->
+        Enter something: <input type="text" id="myInput">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
