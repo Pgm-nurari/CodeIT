@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 9</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .header {
+            background-color: #FFA500;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border: 3px solid black;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+
+        .navbar {
+            background-color: #FFDD00;
+            padding: 10px 20px;
+            border: 3px solid black;
+            border-top: none;
+        }
+
+        .navbar a {
+            color: #9f3232;
+            text-decoration: underline;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar a:active,
+        .navbar a:focus {
+            color: #360f59;
+        }
+
+        .navbar a#aboutus:active {
+            color: #b078db;
+        }
+
+        .subheader {
+            background-color: #008000;
+            color: rgb(255, 255, 255);
+            padding: 15px 20px;
+            text-indent: 250px;
+
+            font-style: italic;
+            border: 3px solid black;
+            border-top: none;
+        }
+
+        .container {
+            display: flex;
+            min-height: 400px;
+            border: 3px solid black;
+            border-top: none;
+        }
+
+        .left-section {
+            flex: 2;
+            background-color: #808080;
+            color: white;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left-section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid white;
+            padding-bottom: 15px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            gap: 20px;
+        }
+
+        .content-wrapper img {
+            width: 120px;
+            height: 120px;
+            border: 2px solid white;
+            flex-shrink: 0;
+        }
+
+        .content-text {
+            flex: 1;
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .right-section {
+            flex: 1;
+            background-color: #ADD8E6;
+            color: #000;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .right-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #FF0000;
+            padding-bottom: 15px;
+        }
+
+        .members-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .member {
+            text-align: center;
+        }
+
+        .member img {
+            width: 100px;
+            height: 100px;
+            
+            margin-bottom: 10px;
+        }
+
+        .member p {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .footer {
+            background-color: #FFA500;
+            color: #000;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            border: 3px solid black;
+            border-top: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .header h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Online Exam System</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="#home">HOME</a> | 
+        <a href="#about" id="aboutus">ABOUT US</a> | 
+        <a href="#courses">Courses</a> | 
+        <a href="#exam-date">Exam Date</a> | 
+        <a href="#result">Result</a> | 
+        <a href="#gallery">Gallery</a>
+    </div>
+
+    <div class="subheader">
+        <strong>Welcome to Online Exam System</strong>
+    </div>
+
+    <div class="container">
+        <div class="left-section">
+            <h2>Welcome to Online Exam System</h2>
+            <div class="content-wrapper">
+                <img src="girl.jpeg" alt="Person" style="border-color:#000; border-width: 5px;">
+                <div class="content-text">
+                    <p>Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document. To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.</p>
+                    <p style="margin-top: 15px;">Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme. Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, where you want to add a row or a column, and then click the plus sign.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <h2>Our Members</h2>
+            <div class="members-container">
+                <div class="member">
+                    <img src="girl.jpeg" alt="Manager">
+                    <p>Manager</p>
+                </div>
+                <div class="member">
+                    <img src="girl.jpeg" alt="Sales Manager">
+                    <p>Sales Manager</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Copyright © 2022 All Rights Reserved
+    </div>
+</body>
+</html>

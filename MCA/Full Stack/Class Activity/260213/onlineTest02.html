@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Test : Result Summary</title>
+
+    <style>
+        td {
+            padding: 10px;
+        }
+        table {
+            margin: auto;
+        }
+    </style>
+
+    <script>
+        function checkScore() {
+            var score = 0;
+
+            if (document.getElementById("q1op1").checked) {
+                score++;
+            }
+            if (document.getElementById("q2op3").checked) {
+                score++;
+            }
+            if (document.getElementById("q3op3").checked) {
+                score++;
+            }
+            if (document.getElementById("q4op3").checked) {
+                score++;
+            }
+            if (document.getElementById("q5op2").checked) {
+                score++;
+            }
+
+            document.getElementById("Score").innerHTML = "Your Score is : " + score;
+            var percentage = (score / 5) * 100;
+            document.getElementById("Percentage").innerHTML = "Your Percentage is : " + percentage + "%";
+            if (percentage >= 50) {
+                document.getElementById("Result").innerHTML = "Congratulations! You Passed.";
+            } else {
+                document.getElementById("Result").innerHTML = "Sorry! You Failed.";
+            }
+        }
+        
+    </script>
+
+</head>
+<body>
+    <div>
+        <form action="" onsubmit="checkScore(); return false;">
+            <h1 style="text-align : center"><strong>Online Test</strong></h1>
+            <table border="0">
+                <tr>
+                    <td colspan="3">
+                        <label name="question1" id="q1">1. Javascript is a _______________ language.</label> <br>
+                        <input type="radio" name="question1" id="q1op1" value="Scripting"> Scripting <br>
+                        <input type="radio" name="question1" id="q1op2" value="Programming"> Programming <br>
+                        <input type="radio" name="question1" id="q1op3" value="Markup"> Markup <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+
+            <label name="question2" id="q2">2. Which of the following is not a Javascript framework?</label> <br>
+            <input type="radio" name="question2" id="q2op1" value="React"> React <br>
+            <input type="radio" name="question2" id="q2op2" value="Angular"> Angular <br>
+            <input type="radio" name="question2" id="q2op3" value="Django"> Django <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+            <label name="question3" id="q3">3. Which of the following is not a Javascript data type?</label> <br>
+            <input type="radio" name="question3" id="q3op1" value="String"> String <br>
+            <input type="radio" name="question3" id="q3op2" value="Number"> Number <br>
+            <input type="radio" name="question3" id="q3op3" value="Character"> Character <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+            <label name="question4" id="q4">4. Which of the following is not a Javascript library?</label> <br>
+            <input type="radio" name="question4" id="q4op1" value="JQuery"> JQuery <br>
+            <input type="radio" name="question4" id="q4op2" value="Lodash"> Lodash <br>
+            <input type="radio" name="question4" id="q4op3" value="Flask"> Flask <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+            <label name="question5" id="q5">5. What does DOM stand for?</label> <br>
+            <input type="radio" name="question5" id="q5op1" value="Data Object Manipulation"> Data Object Manipulation<br>
+            <input type="radio" name="question5" id="q5op2" value="Document Object Model"> Document Object Model <br>
+            <input type="radio" name="question5" id="q5op3" value="Database Object Markup"> Database Object Markup<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;" colspan="3">
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="Score"></div>
+                    </td>
+                    <td>
+                        <div id="Percentage"></div>
+                    </td>
+                    <td>
+                        <div id="Result"></div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

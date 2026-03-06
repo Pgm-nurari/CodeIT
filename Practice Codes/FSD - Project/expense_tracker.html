@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #eef2f7;
+        }
+        .section-box {
+            background: white;
+            padding: 18px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        .table thead {
+            background: #343a40;
+            color: white;
+        }
+        .empty-msg {
+            color: #888;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">💰 Expense Tracker</h2>
+            <small class="text-muted">Simple Expense Management</small>
+        </div>
+        <div class="row g-4">
+            <!-- LEFT SIDE -->
+            <div class="col-md-4">
+                <div class="section-box">
+                    <h5 class="text-primary">Add / Update Expense</h5>
+                    <input type="date" id="date" class="form-control mb-2">
+                    <input type="text" id="title" class="form-control mb-2" placeholder="Expense Title">
+                    <select id="type" class="form-control mb-2">
+                        <option value="">Select Type</option>
+                        <option>Income</option>
+                        <option>Expense</option>
+                    </select>
+                    <select id="category" class="form-control mb-2">
+                        <option value="">Select Category</option>
+                        <option>Food</option>
+                        <option>Travel</option>
+                        <option>Bills</option>
+                        <option>Shopping</option>
+                        <option>Other</option>
+                    </select>
+                    <input type="number" id="amount" class="form-control mb-2" placeholder="Amount">
+                    <input type="number" id="budget" class="form-control mb-2" placeholder="Monthly Budget">
+                    <button class="btn btn-sm btn-secondary mb-2" onclick="saveBudget()">Set Budget</button>
+                    <button class="btn btn-sm btn-primary" onclick="addOrUpdateExpense()">Save Expense</button>
+                </div>
+            </div>
+            <!-- RIGHT SIDE -->
+            <div class="col-md-8">
+                <div class="section-box">
+                    <h5 class="text-success">Expense Records</h5>
+                    <div class="row mb-3">
+                        <div class="col-md-3">
+                            <input type="text" id="searchBox" class="form-control" placeholder="Search..."
+                                onkeyup="filterExpenses()">
+                        </div>
+                        <div class="col-md-3">
+                            <select id="categoryFilter" class="form-control" onchange="filterExpenses()">
+                                <option value="">All Categories</option>
+                                <option>Food</option>
+                                <option>Travel</option>
+                                <option>Bills</option>
+                                <option>Shopping</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <select id="typeFilterExpense" class="form-control" onchange="filterExpenses()">
+                                <option value="">All Types</option>
+                                <option>Income</option>
+                                <option>Expense</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="date" id="dateFilter" class="form-control" onchange="filterExpenses()">
+                        </div>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Title</th>
+                                <th>Category</th>
+                                <th>Type</th>
+                                <th>Amount</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="expenseTable">
+                            <tr>
+                                <td colspan="6" class="text-center">
+                                    <span class="empty-msg">No Expenses Added</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <h6 id="incomeDisplay">Total Income: ₹0</h6>
+                    <h6 id="expenseDisplay">Total Expense: ₹0</h6>
+                    <h6 id="profitDisplay">Profit/Loss: ₹0</h6>
+                    <h6 id="budgetDisplay">Remaining Budget: Not Set</h6>
+                    <h6 id="totalAmount" class="text-end fw-bold">Total: ₹0</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        /* GLOBAL DATA */
+        let expenses = JSON.parse(localStorage.getItem("expenses")) || [];
+        let editId = null;
+        let budget = Number(localStorage.getItem("budget")) || 0;
+        function saveBudget() {
+            if (budget > 0) {
+                alert("Budget already set and fixed.");
+                return;
+            }
+            let b = document.getElementById("budget").value;
+            if (b <= 0) {
+                alert("Enter valid budget");
+                return;
+            }
+            budget = Number(b);
+            localStorage.setItem("budget", budget);
+            document.getElementById("budget").disabled = true;
+            displayExpenses();
+        }
+        /* STORAGE */
+        function saveData() {
+            localStorage.setItem("expenses", JSON.stringify(expenses));
+        }
+        /* ADD / UPDATE */
+        function addOrUpdateExpense() {
+            let type = document.getElementById("type").value;
+            let date = dateInput().value;
+            let title = titleInput().value.trim();
+            let category = categoryInput().value;
+            let amount = amountInput().value;
+            if (type === "" || date === "" || title === "" || category === "" || amount === "") {
+                alert("Fill all fields");
+                return;
+            }
+            if (amount <= 0) {
+                alert("Amount must be greater than 0");
+                return;
+            }
+            if (editId === null) {
+                expenses.push({
+                    id: Date.now(),
+                    date,
+                    title,
+                    category,
+                    type,
+                    amount: Number(amount)
+                });
+            } else {
+                let e = expenses.find(x => x.id === editId);
+                e.date = date;
+                e.title = title;
+                e.category = category;
+                e.type = type;
+                e.amount = Number(amount);
+                editId = null;
+            }
+            saveData();
+            displayExpenses();
+            clearForm();
+        }
+        function filterExpenses() {
+            let text = document.getElementById("searchBox")
+                .value.toLowerCase();
+            let category =
+                document.getElementById("categoryFilter").value;
+            let type =
+                document.getElementById("typeFilterExpense").value;
+            let date =
+                document.getElementById("dateFilter").value;
+            let filtered = expenses.filter(e => {
+                let matchText =
+                    e.title.toLowerCase().includes(text);
+                let matchCategory =
+                    (category === "" || e.category === category);
+                let matchType =
+                    (type === "" || e.type === type);
+                let matchDate =
+                    (date === "" || e.date === date);
+                return matchText && matchCategory &&
+                    matchType && matchDate;
+            });
+            displayExpenses(filtered);
+        }
+        /* DISPLAY */
+        function displayExpenses(list = expenses) {
+            let html = "";
+            let income = 0;
+            let expense = 0;
+            if (list.length === 0) {
+                html = `<tr>
+<td colspan="7" class="text-center">
+<span class="empty-msg">No Records</span>
+</td></tr>`;
+            } else {
+                list.forEach(e => {
+                    if (e.type === "Income") income += e.amount;
+                    else expense += e.amount;
+                    html += `
+<tr>
+<td>${e.date}</td>
+<td>${e.title}</td>
+<td>${e.category}</td>
+<td>${e.type}</td>
+<td>₹${e.amount}</td>
+<td><button class="btn btn-sm btn-outline-secondary"
+onclick="editExpense(${e.id})">Edit</button></td>
+<td><button class="btn btn-sm btn-outline-danger"
+onclick="deleteExpense(${e.id})">Delete</button></td>
+</tr>`;
+                });
+            }
+            document.getElementById("expenseTable").innerHTML = html;
+            let profit = income - expense;
+            document.getElementById("incomeDisplay").innerText =
+                "Total Income: ₹" + income;
+            document.getElementById("expenseDisplay").innerText =
+                "Total Expense: ₹" + expense;
+            document.getElementById("profitDisplay").innerText =
+                "Profit/Loss: ₹" + profit;
+            if (budget > 0) {
+                let remaining = budget - expense;
+                let warningLimit = budget * 0.10;   // 10% rule
+                let budgetText = document.getElementById("budgetDisplay");
+                budgetText.innerText =
+                    "Remaining Budget: ₹" + remaining + " (Budget: ₹" + budget + ")";
+                /* STATUS CONDITIONS */
+                if (remaining < 0) {
+                    budgetText.style.color = "red";
+                    budgetText.innerText += "  ❌ Budget Exceeded";
+                }
+                else if (remaining <= warningLimit) {
+                    budgetText.style.color = "orange";
+                    budgetText.innerText += "  ⚠ Low Balance (<10%)";
+                }
+                else {
+                    budgetText.style.color = "green";
+                }
+            }
+            else {
+                document.getElementById("budgetDisplay").innerText =
+                    "Remaining Budget: Not Set";
+            }
+        }
+        /* EDIT */
+        function editExpense(id) {
+            let e = expenses.find(x => x.id === id);
+            dateInput().value = e.date;
+            titleInput().value = e.title;
+            categoryInput().value = e.category;
+            amountInput().value = e.amount;
+            editId = id;
+        }
+        /* DELETE */
+        function deleteExpense(id) {
+            if (!confirm("Delete expense?")) return;
+            expenses = expenses.filter(e => e.id !== id);
+            saveData();
+            displayExpenses();
+        }
+        /* SEARCH */
+        function searchExpense() {
+            let key = document.getElementById("searchBox").value.toLowerCase();
+            let filtered = expenses.filter(e =>
+                e.title.toLowerCase().includes(key) ||
+                e.category.toLowerCase().includes(key)
+            );
+            displayExpenses(filtered);
+        }
+        /* HELPERS */
+        function clearForm() {
+            dateInput().value = "";
+            titleInput().value = "";
+            categoryInput().value = "";
+            amountInput().value = "";
+        }
+        function dateInput() { return document.getElementById("date"); }
+        function titleInput() { return document.getElementById("title"); }
+        function categoryInput() { return document.getElementById("category"); }
+        function amountInput() { return document.getElementById("amount"); }
+        /* INITIAL LOAD */
+        displayExpenses();
+        if (budget > 0) {
+            document.getElementById("budget").disabled = true;
+        }
+    </script>
+</body>
+</html>
