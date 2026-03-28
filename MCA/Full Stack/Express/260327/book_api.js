@@ -16,6 +16,16 @@ app.get('/books',(req,res)=>{
     res.json(books);
 });
 
+//get book by id
+app.get('/books/:id',(req,res)=>{
+    const id=parseInt(req.params.id);
+    const book=books.find(b=>b.id===id);
+    if(!book){
+        return res.status(404).json({message : "book not found"});
+    }
+    res.json(book);
+});
+
 //POST -Add a new book
 app.post('/books',(req,res)=>{
     const newBook={
