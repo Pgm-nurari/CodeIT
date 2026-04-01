@@ -1,7 +1,6 @@
 ##########################
 # Universal Git Ignore   #
 # For Python + Java Dev  #
-#    + Node.js/Express   #
 ##########################
 
 # ------------------------
@@ -9,9 +8,6 @@
 # ------------------------
 .DS_Store
 Thumbs.db
-desktop.ini
-ehthumbs.db
-$RECYCLE.BIN/
 *.swp
 *.swo
 *~
@@ -75,7 +71,6 @@ instance/
 
 # Jupyter / IPython
 .ipynb_checkpoints
-.ipynb_checkpoints/
 profile_default/
 ipython_config.py
 
@@ -176,22 +171,6 @@ nbdist/
 .project
 
 # ------------------------
-# JavaScript / Frontend
-# ------------------------
-node_modules/
-.npm/
-.pnpm-store/
-.yarn/
-
-# ------------------------
-# C / C++ build artifacts
-# ------------------------
-*.o
-*.obj
-*.out
-*.exe
-
-# ------------------------
 # Docs / Tools
 # ------------------------
 # Sphinx
@@ -218,56 +197,3 @@ __marimo__/
 
 # PyPI config
 .pypirc
-
-# ------------------------
-# Node.js / Express
-# ------------------------
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-.pnpm-store/
-
-# Runtime data
-pids/
-*.pid
-*.seed
-*.pid.lock
-
-# Build output
-dist/
-build/
-.next/
-.nuxt/
-out/
-
-# Environment variables
-.env
-.env.local
-.env.*.local
-.env.development
-.env.test
-.env.production
-
-# Dependency lock (keep one, ignore the others if needed)
-# package-lock.json
-# yarn.lock
-
-# Coverage
-coverage/
-.nyc_output/
-
-# Logs
-logs/
-*.log
-
-# Cache
-.npm/
-.eslintcache
-.stylelintcache
-.parcel-cache/
-
-# Optional: uploaded files / static assets
-uploads/
-public/uploads/
