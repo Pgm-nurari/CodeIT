@@ -74,6 +74,16 @@ instance/
 profile_default/
 ipython_config.py
 
+# Data files
+*.csv
+*.xlsx
+*.xls
+
+# Node.js (Full Stack projects)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
 # Virtual envs
 .env
 .envrc
