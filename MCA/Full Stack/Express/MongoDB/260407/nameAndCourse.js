@@ -1,5 +1,5 @@
 /*
-MOngoDB started on - 01/-4/2026
+MOngoDB : Fetching details - 07/-4/2026
 */
 const mongoose = require("mongoose");
 
@@ -19,13 +19,9 @@ const studentSchema = new mongoose.Schema({
 // Create the Student model
 const Student = mongoose.model("students", studentSchema);
 
-// Insert a student records
-const insertStudents = async () => {
-    await Student.insertMany([
-        { rollno: 1, name: "Alice", course: "MCA", semester: 1, mark: 85 },
-        { rollno: 2, name: "Bob", course: "MCA", semester: 1, mark: 90 }
-    ]);
-    console.log("Students inserted successfully");
-};
-
-insertStudents();
+// Fetch all student name and course details
+Student.find({}, { name: 1, course: 1, _id: 0 }).then((studs) => {
+    console.log("Student Name and Course Details : ");
+    console.log(studs);
+    mongoose.connection.close();
+});
